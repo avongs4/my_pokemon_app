@@ -1,0 +1,10 @@
+/* src/pages/NotFound.css */
+.not-found {
+  text-align: center;
+  padding: 50px;
+  color: #555;
+}
+.not-found a {
+  color: #007bff;
+  text-decoration: underline;
+}
