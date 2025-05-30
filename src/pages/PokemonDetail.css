@@ -1,0 +1,42 @@
+.pokemon-detail-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.pokemon-detail-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.pokemon-detail-card p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.detail-loading,
+.detail-error {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}
