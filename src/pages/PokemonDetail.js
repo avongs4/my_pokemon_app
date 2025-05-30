@@ -27,7 +27,7 @@ function PokemonDetail() {
   }, [id]);
 
   if (loading) return <p className="detail-loading">Loading Pokémon details...</p>;
-  if (error) return <p className="detail-error">{error}</p>;
+  if (error) return <p className="error-message">{error}</p>;
 
   return (
     <div className="pokemon-detail-container">
