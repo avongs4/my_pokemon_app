@@ -1,14 +1,24 @@
 // PokemonCard.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import LazyImage from './LazyImage'; // Ensure the path is correct
-import './PokemonCard.css'; // Ensure this CSS file exists and has your styles
+import './PokemonCard.css';
 
 function PokemonCard({ pokemon }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (pokemon.id) {
+      navigate(`/pokemon/${pokemon.id}`);
+    }
+  };
+
   return (
-    <div className="pokemon-card">
+    <div className="pokemon-card" onClick={handleClick}>
       <LazyImage
-        src={pokemon.image} // This should be the URL of the Pokemon image
-        alt={pokemon.name}  // This should be the name of the Pokemon
+        src={pokemon.image}
+        alt={pokemon.name}
+        className="pokemon-image"
       />
       <h3>{pokemon.name}</h3>
     </div>
