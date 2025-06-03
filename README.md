@@ -60,7 +60,8 @@ CSS (custom styles per component)
 
 PokéAPI (https://pokeapi.co)
 
-
+visit my hosted link:
+https://dev.d1fcawh8v73twn.amplifyapp.com
 
 ### The Core Team
 AVONG HARUNA
